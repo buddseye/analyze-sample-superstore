@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="地域_中国地方 <= 0.5\ngini = 0.221\nsamples = 10000\nvalue = [8737, 1263]\nclass = 0", fillcolor="#e99356"] ;
+1 [label="顧客区分_消費者 <= 0.5\ngini = 0.225\nsamples = 9158\nvalue = [7972, 1186]\nclass = 0", fillcolor="#e99456"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="地域_九州 <= 0.5\ngini = 0.241\nsamples = 4617\nvalue = [3969, 648]\nclass = 0", fillcolor="#e99659"] ;
+1 -> 2 ;
+3 [label="gini = 0.251\nsamples = 4052\nvalue = [3456, 596]\nclass = 0", fillcolor="#e9975b"] ;
+2 -> 3 ;
+4 [label="gini = 0.167\nsamples = 565\nvalue = [513, 52]\nclass = 0", fillcolor="#e88e4d"] ;
+2 -> 4 ;
+5 [label="地域_九州 <= 0.5\ngini = 0.209\nsamples = 4541\nvalue = [4003, 538]\nclass = 0", fillcolor="#e89254"] ;
+1 -> 5 ;
+6 [label="gini = 0.201\nsamples = 3997\nvalue = [3543, 454]\nclass = 0", fillcolor="#e89152"] ;
+5 -> 6 ;
+7 [label="gini = 0.261\nsamples = 544\nvalue = [460, 84]\nclass = 0", fillcolor="#ea985d"] ;
+5 -> 7 ;
+8 [label="gini = 0.166\nsamples = 842\nvalue = [765, 77]\nclass = 0", fillcolor="#e88e4d"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
